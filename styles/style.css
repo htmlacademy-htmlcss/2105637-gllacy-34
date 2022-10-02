@@ -1,6 +1,6 @@
 @font-face {
   font-family: "inter", sans-serif;
-  src: url(fonts/inter-400.woff2) format("woff2");
+  src: url("fonts/inter-400.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "inter", sans-serif;
-  src: url(fonts/inter-700.woff2) format("woff2");
+  src: url("fonts/inter-700.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "inter", sans-serif;
-  src: url(fonts/inter-900.woff2) format("woff2");
+  src: url("fonts/inter-900.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -337,14 +337,15 @@ button.order {
 .free-gifts h2 {
   text-align: center;
   font-size: 32px;
-  margin: 75px 320px 54px;
-
+  width: 435px;
+  margin: 75px auto 54px;
 }
 
 .popular-flavour h2 {
   text-align: center;
-  margin: 80px 220px 55px;
+  margin: 80px auto 55px;
   font-size: 32px;
+  width: 530px;
 }
 
 .center-text {
@@ -408,7 +409,7 @@ button.order {
 
 .product {
   background-color: #ffffff;
-  background-size: 270px 281px;
+
   border-radius: 8px;
   text-align: center;
 
@@ -428,7 +429,8 @@ button.order {
 }
 
 .description-product {
-  margin: 8px 40px;
+  margin: 8px auto;
+  width: 190px;
 }
 
 .main-h3 {
@@ -476,7 +478,7 @@ button.order {
   border-radius: 24px;
   align-items: center;
   background-position: center;
-  background-image: url(../images/cart.svg);
+  background-image: url(../images/add-in-cart.svg);
   background-repeat: no-repeat;
   width: 16px;
   height: 16px;
@@ -608,9 +610,11 @@ button.order {
 }
 
 .about {
+
   color: #565c66;
   width: 455px;
-  margin: 0 0 18px 16px;
+  margin-top: 0;
+  margin-left: 16px;
 
 }
 
@@ -620,15 +624,6 @@ button.order {
   width: 455px;
 
 }
-
-
-.about-gllacy {
-  padding: 56px 40px;
-}
-
-
-
-
 
 
 .icon-1 {
@@ -993,4 +988,167 @@ button.order {
   margin-right: 10px;
   border-radius: 24px;
   border: 2px solid rgba(240, 240, 240, 0.4);
+}
+
+
+.modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px;
+  background-color: #fcfcfc;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 44px;
+  background-color: #fcfcfc;
+  border: none;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 32px;
+  margin-right: 32px;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #2D3440;
+
+}
+
+.feedback-form {}
+
+.feedback-form input {
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  padding: 14px 16px;
+  width: 442px;
+}
+
+.feedback-request input {
+  padding-bottom: 115px;
+  margin-bottom: 32px;
+}
+
+.feedback-form button {
+  margin-left: 320px;
+  margin-bottom: 0;
+}
+
+.modal-container-close {
+  display: none;
+}
+
+
+.modal-cart {
+  position: fixed;
+  top: 76px;
+  right: 370px;
+  margin: auto;
+  padding: 48px;
+  background-color: #fcfcfc;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+
+.cart-order {
+  width: 345px;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.cart-order img {
+  margin-right: 16px;
+}
+
+.stroke {
+  display: inline-flex;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 24px;
+}
+
+.name-bold {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+
+.price-bold {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+
+}
+
+.weight {
+  padding: 0;
+  margin: 0;
+  color: #B9B9B9;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+.make-order {
+  display: inline-flex;
+}
+
+.make-order p {
+  padding-top: 10px;
+  margin-left: 32px;
+  align-items: center;
+}
+
+
+.line {
+  border-bottom: 1px solid #e7e7e7;
+  margin: 8px 0 32px;
+
+}
+
+.goods {
+  display: block;
+  width: 160px;
+
+}
+
+
+.delete-good-button {
+  background-color: #fcfcfc;
+  border: none;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  margin-left: 52px;
+
 }
