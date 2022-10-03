@@ -74,7 +74,7 @@ body {
 
 .main-menu-right {
   display: flex;
-  margin-left: 170px;
+  margin-left: 186px;
   justify-items: center;
   align-items: center;
   font-size: 16px;
@@ -308,9 +308,9 @@ body {
 }
 
 .slider-button-slider-prev {
-  position: absolute;
-  left: 910px;
-  top: 363px;
+  position: relative;
+  left: -18px;
+  top: -275px;
   cursor: pointer;
   border-radius: 50%;
   width: 38px;
@@ -350,9 +350,9 @@ body {
 
 
 .slider-button-slider-next {
-  position: absolute;
-  left: 1220px;
-  top: 363px;
+  position: relative;
+  left: 22px;
+  top: -275px;
   cursor: pointer;
   border-radius: 50%;
   width: 38px;
@@ -779,32 +779,16 @@ button.gift:disabled {
   grid-template-columns: 510px 510px;
   grid-template-rows: 75px 75px;
   gap: 28px;
-  margin-bottom: 56px;
+  padding-bottom: 56px;
+
 
 }
-
-
-
-
-/*.advantages{
-  margin-bottom: 40px;
-  background-image: url(../images/ice_cream.svg);
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  border:2px solid #2d3440;
-  width: 48px;
-  padding: 8px;
-  float:left;
-  margin-right: 16px;
-
-}
-*/
 
 
 .advantages {
   display: inline-flex;
+  padding-top: 56px;
 
-  margin-top: 56px;
 
 }
 
@@ -863,16 +847,17 @@ button.gift:disabled {
 .about {
 
   color: #565c66;
-  width: 455px;
+
   margin-top: 0;
   margin-left: 16px;
 
 }
 
 .about-ice {
-  margin: 3px 0 0 16px;
+  margin-top: 3px;
+  margin-left: 16px;
   color: #565c66;
-  width: 455px;
+
 
 }
 
@@ -1437,4 +1422,15 @@ button.contact-button:disabled {
   height: 16px;
   margin-left: 52px;
 
+}
+
+
+.banana-icecream {
+
+  background: #69A9FF;
+
+}
+
+.caramel-icecream {
+  background: #FCC850;
 }
