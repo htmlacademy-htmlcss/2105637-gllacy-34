@@ -584,7 +584,7 @@ button.gift:disabled {
   background-color: #ff7799;
   background-image: url(../images/raspberry.png);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right bottom;
   border-radius: 16px;
   padding: 10px 36px 36px 36px;
 
@@ -594,7 +594,7 @@ button.gift:disabled {
   background-color: #ff7799;
   background-image: url(../images/marshmellow.png);
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: right bottom;
   border-radius: 16px;
   padding: 10px 36px 36px 36px;
 
@@ -747,6 +747,7 @@ button.gift:disabled {
 .waffle-border {
   background-image: url(../images/waffle.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 16px;
   padding: 24px;
 
@@ -777,9 +778,10 @@ button.gift:disabled {
 .about-icecream {
   display: grid;
   grid-template-columns: 510px 510px;
-  grid-template-rows: 75px 75px;
-  gap: 28px;
-  padding-bottom: 56px;
+  grid-template-rows: 1fr 1fr;
+  gap: 29px 28px;
+  margin-top: 56px;
+
 
 
 }
@@ -787,7 +789,7 @@ button.gift:disabled {
 
 .advantages {
   display: inline-flex;
-  padding-top: 56px;
+
 
 
 }
@@ -801,6 +803,8 @@ button.gift:disabled {
   border: 2px solid #2d3440;
   border-radius: 50%;
   background-size: 30px;
+  justify-self: start;
+  align-self: start;
 
 }
 
@@ -813,6 +817,8 @@ button.gift:disabled {
   border: 2px solid #2d3440;
   border-radius: 50%;
   background-size: 32px;
+  justify-self: start;
+  align-self: start;
 
 }
 
@@ -826,6 +832,8 @@ button.gift:disabled {
   border-radius: 50%;
   background-size: 32px;
   margin-top: 4px;
+  justify-self: start;
+  align-self: start;
 
 }
 
@@ -841,25 +849,19 @@ button.gift:disabled {
   border-radius: 50%;
   background-size: 32px;
   margin-top: 4px;
+  justify-self: start;
+  align-self: start;
 
 }
 
 .about {
-
   color: #565c66;
-
   margin-top: 0;
   margin-left: 16px;
+  margin-bottom: 9px;
 
 }
 
-.about-ice {
-  margin-top: 3px;
-  margin-left: 16px;
-  color: #565c66;
-
-
-}
 
 
 .icon-1 {
@@ -1333,11 +1335,11 @@ button.contact-button:disabled {
 
 
 .modal-cart {
-  position: fixed;
-  top: 76px;
-  right: 370px;
-  margin: auto;
-  padding: 48px;
+  position: relative;
+  top: -600px;
+  right: -180px;
+  width: 350px;
+  padding: 40px;
   background-color: #fcfcfc;
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
@@ -1424,13 +1426,16 @@ button.contact-button:disabled {
 
 }
 
-
-.banana-icecream {
-
-  background: #69A9FF;
-
+/*
+.straw {
+  background: #FEAFC3;
 }
 
-.caramel-icecream {
+.banana {
+  background-color: #69A9FF;
+}
+
+.caramel {
   background: #FCC850;
 }
+*/
