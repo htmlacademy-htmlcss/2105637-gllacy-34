@@ -24,14 +24,26 @@
 
 
 body {
-  width: 1170px;
   margin: 0 auto;
   color: #2D3440;
   font-family: "inter", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
+
+}
+
+.yellow {
+  background: #FCC850;
+}
+
+.blue {
+  background-color: #69A9FF;
+}
+
+.pink {
   background: #FEAFC3;
+
 }
 
 .visually-hidden {
@@ -49,10 +61,17 @@ body {
 
 .page-header {
   width: 1170px;
-  display: inline-flex;
+  margin: 0 auto;
+  display: flex;
   padding: 24px 0 24px 0;
   align-items: center;
 
+
+}
+
+.main-index {
+  margin: 0 auto;
+  width: 1170px;
 }
 
 .main-menu-left {
@@ -1186,7 +1205,9 @@ button.contact-button:disabled {
 
 
 .main-footer {
-  display: inline-flex;
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
   padding-top: 42px;
   padding-bottom: 48px;
 }
@@ -1425,17 +1446,3 @@ button.contact-button:disabled {
   margin-left: 52px;
 
 }
-
-/*
-.straw {
-  background: #FEAFC3;
-}
-
-.banana {
-  background-color: #69A9FF;
-}
-
-.caramel {
-  background: #FCC850;
-}
-*/
