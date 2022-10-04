@@ -448,11 +448,16 @@ button.gift:disabled {
 
 .social-promo {
 
-  display: inline-flex;
+  display: flex;
   margin: -4px 0 0 1005px;
 
+}
 
-
+.social-promo ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .social-main {
@@ -486,8 +491,16 @@ button.gift:disabled {
 
 .circle-button {
   align-items: center;
-  display: inline-flex;
+  display: flex;
   margin-top: 100px;
+
+}
+
+.circle-button ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .circle-active {
